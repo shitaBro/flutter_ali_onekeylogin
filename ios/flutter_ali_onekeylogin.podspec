@@ -15,6 +15,17 @@ A new Flutter project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
+  s.vendored_frameworks = 'libs/ATAuthSDK.framework', 'libs/YTXMonitor.framework', 'libs/YTXOperators.framework'
+  s.static_framework = false
+
+    # 解决移动crash
+  s.xcconfig = {
+      'OTHER_LDFLAGS' => '-ObjC',
+      'ENABLE_BITCODE' => 'NO'
+    }
+    
+    # 加载静态资源
+  s.resources = ['Assets/*']
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice.
