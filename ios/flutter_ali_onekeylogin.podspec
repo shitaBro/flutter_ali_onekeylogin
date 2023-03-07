@@ -15,7 +15,7 @@ A new Flutter project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.vendored_frameworks = 'libs/ATAuthSDK.framework', 'libs/YTXMonitor.framework', 'libs/YTXOperators.framework'
+  s.vendored_frameworks = 'lib/ATAuthSDK.framework', 'lib/YTXMonitor.framework', 'lib/YTXOperators.framework'
   s.static_framework = false
 
     # 解决移动crash
